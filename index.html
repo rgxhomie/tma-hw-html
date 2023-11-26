@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A semantic HTML webpage for html homework">
+    <meta name="author" content="Borys Hrimov">
+    <meta name="keywords" content="HTML, CSS">
+    <title>HTML HW</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header__subblock bordered">
+            <div class="block__number__container">
+                <span class="block__number">1.1</span>
+            </div>
+        </div>
+        <div class="header__subblock bordered">
+            <div class="block__number__container">
+                <span class="block__number">1.2</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="photos" class="bordered">
+            <picture>
+                <img src="./assets/1.png" alt="2.1" width="250" height="150">
+            </picture>
+            <picture>
+                <img src="./assets/2.png" alt="2.2" width="250" height="150">
+            </picture>
+            <picture>
+                <img src="./assets/3.png" alt="2.3" width="250" height="150">
+            </picture>
+            <picture>
+                <img src="./assets/4.png" alt="2.4" width="250" height="150">
+            </picture>
+        </section>
+
+        <section id="three">
+            <div class="three__left bordered">
+                <div class="block__number__container">
+                    <span class="block__number">3.1</span>
+                </div>
+            </div>
+            <div class="three__right bordered">
+                <div class="block__number__container">
+                    <span class="block__number">3.2</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="twopart__container">
+            <div class="left">
+                <section id="four">
+                    <div class="four__large bordered">
+                        <div class="block__number__container">
+                            <span class="block__number">4.1</span>
+                        </div>
+                    </div>
+                    <div class="four__small-left bordered">
+                        <div class="block__number__container">
+                            <span class="block__number">4.2</span>
+                        </div>
+                    </div>
+                    <div class="four__small-right bordered">
+                        <div class="block__number__container">
+                            <span class="block__number">4.3</span>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="five" class="bordered">
+                    <div class="block__number__container">
+                        <span class="block__number">5</span>
+                    </div>
+                </section>
+            </div>
+    
+            <aside class="bordered">
+                <nav>
+                    <ul>
+                        <li><a href="#photos">2</a></li>
+                        <li><a href="#three">3</a></li>
+                        <li><a href="#four">4</a></li>
+                        <li><a href="#five">5</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bordered">
+        <div class="block__number__container">
+            <span class="block__number">7</span>
+        </div>
+    </footer>
+</body>
+</html>

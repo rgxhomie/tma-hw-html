@@ -1,0 +1,155 @@
+:root {
+    --border-width: 3px;
+    --border-style: solid;
+    --border-color: #cfcdcd;
+
+    --color-inverted: #fff;
+
+    line-height: normal;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.bordered {
+    border: var(--border-width) var(--border-style) var(--border-color);
+    padding: 5px;
+}
+
+.block__number__container {
+    margin: auto;
+    text-align: center;
+}
+
+.block__number {
+    color: #cfcdcd;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: auto;
+    gap: 5px;
+}
+
+.header__subblock {
+    padding: 3px;
+}
+
+.header__subblock:nth-child(2) {
+    flex-grow: 1;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#photos > picture {
+    width: calc(25% - 10px);
+}
+
+#photos > picture > img {
+    width: 100%;
+}
+
+#three {
+    display: flex;
+    gap: 10px;
+}
+
+#three > .three__left {
+    width: 30%;
+}
+
+#three > .three__right {
+    width: 70%;
+}
+
+.twopart__container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#four > .bordered {
+    padding: 50px;
+    text-align: center;
+}
+
+.four__large {
+    grid-column: span 2;
+}
+
+#five {
+    margin-top: 10px;
+    padding: 100px;
+}
+
+aside {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #photos > picture {
+        width: calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__subblock:nth-child(1) {
+        flex-grow: 0.7;
+    }
+
+    .header__subblock:nth-child(2) {
+        flex-grow: 0.3;
+    }
+
+    #photos > picture {
+        width: calc(100% - 5px);
+    }
+
+    #three {
+        flex-wrap: wrap;
+    }
+
+    #three > .three__left, #three > .three__right {
+        width: 100%;
+    }
+
+    .twopart__container {
+        grid-template-columns: 100%;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
